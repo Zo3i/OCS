@@ -54,7 +54,7 @@ sudo rpm -ivh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.
 sudo yum -y install mysql-community-server
 systemctl start mysqld
 mysqltmppwd=`cat /var/log/mysqld.log | grep -i 'temporary password'`
-echo -e "\033[31m 数据库安装完成!请及时修改密码你的数据库密码为:${mysqltmppwd: -12} \033[0m"
+echo -e "\033[31m 数据库安装完成!请及时修改密码你的数据库密码为:${mysqltmppwd: -12}\033[0m"
 sleep 3
 #script to start
 echo "##########################################################################"
