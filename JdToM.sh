@@ -60,7 +60,7 @@ sleep 3
 echo "##########################################################################"
 echo -e "\033[32m安装完成\n启动Tomcat: service tomcat start\n关闭Tomcat: service tomcat stop\nTomcat目录:/usr/local/tomcat\033[0m"
 #提示用户修改数据库密码
-echo "1.进入数据库: mysql -uroot -p密码"
+echo "1.进入数据库: mysql -uroot -p"
 echo "2.修改密码: ALTER USER 'root'@'localhost' IDENTIFIED BY '密码';"
 echo "3.设置远程登录用户: grant all privileges on *.* to 'root' @'%' identified by '密码';"
 echo "4.刷新: FLUSH PRIVILEGES;"
