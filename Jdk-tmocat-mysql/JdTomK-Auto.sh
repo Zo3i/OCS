@@ -4,7 +4,6 @@ echo "开始安装Java环境:"
 sleep 3
 
 #download
-wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/tomcat%26%26JDK/jdk-8u152-linux-x64.tar.gz
 tar -axvf ./jdk-8u152-linux-x64.tar.gz
 cp ./jdk1.8.0_152 /usr/local/jdk -r
 
@@ -28,7 +27,6 @@ echo "开始安装Tomcat:"
 sleep 3
 
 #download
-wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/tomcat%26%26JDK/apache-tomcat-8.5.24.tar.gz
 tar -zxvf apache-tomcat-8.5.24.tar.gz
 cp apache-tomcat-8.5.24 /usr/local/tomcat -r
 
