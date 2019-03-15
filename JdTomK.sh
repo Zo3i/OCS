@@ -4,6 +4,7 @@ echo "开始安装Java环境:"
 sleep 3
 
 #download
+wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/tomcat%26%26JDK/jdk-8u152-linux-x64.tar.gz
 tar -axvf ./jdk-8u152-linux-x64.tar.gz
 cp ./jdk1.8.0_152 /usr/local/jdk -r
 
@@ -27,6 +28,7 @@ echo "开始安装Tomcat:"
 sleep 3
 
 #download
+wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/tomcat%26%26JDK/apache-tomcat-8.5.24.tar.gz
 tar -zxvf apache-tomcat-8.5.24.tar.gz
 cp apache-tomcat-8.5.24 /usr/local/tomcat -r
 
@@ -52,9 +54,14 @@ sudo rpm -ivh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.
 sudo yum -y install mysql-community-server
 systemctl start mysqld
 mysqltmppwd=`cat /var/log/mysqld.log | grep -i 'temporary password'`
-mysql  -uroot -p"${mysqltmppwd: -12}"  --connect-expired-password  -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Abc12345**';"
-mysql  -uroot -p"Abc12345**"  --connect-expired-password  -e "grant all privileges on *.* to 'root' @'%' identified by 'Abc12345**';"
+echo -e "\033[31m 数据库安装完成!请及时修改密码你的数据库密码为:${mysqltmppwd: -12}\033[0m"
+sleep 3
+#script to start
 echo "##########################################################################"
 echo -e "\033[32m安装完成\n启动Tomcat: service tomcat start\n关闭Tomcat: service tomcat stop\nTomcat目录:/usr/local/tomcat\033[0m"
-echo -e "\033[31m数据库安装完成,你的数据库密码为:Abc12345**(已开启远程访问权限)\033[0m"
+#提示用户修改数据库密码
+echo "1.进入数据库: mysql -uroot -p密码"
+echo "2.修改密码: ALTER USER 'root'@'localhost' IDENTIFIED BY '密码';"
+echo "3.设置远程登录用户: grant all privileges on *.* to '用户名' @'%' identified by '密码';"
+echo "4.刷新: FLUSH PRIVILEGES;"
 echo "##########################################################################"
