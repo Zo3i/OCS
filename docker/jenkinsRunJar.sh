@@ -3,9 +3,17 @@ workspace=$1
 filename=$2
 port=$3
 
-# 删除之前的docker
-docker stop $filename || true && docker rm $filename || true
-docker rmi -f $filename
+# 判断是否存在镜像
+docker images | grep $filename &> /dev/null
+if [ $? -ne 0 ]
+then
+    echo -e "\033[32m  image is not existe, it will be build \033[0m"
+else
+    echo "existed!!!"
+    # 删除之前的docker
+    docker stop $filename || true && docker rm $filename || true
+    docker rmi -f $filename
+fi
 
 # 构建docker
 cd $workspace
