@@ -6,7 +6,8 @@ cd /root
 rm -rf /root/frp
 #下载文件到本地
 echo '正在下载解压服务端文件...'
-if [ ! -f "frp.zip" ];then wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip;unzip frp.zip; fi
+if [ ! -f "frp.zip" ];then wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip; fi
+unzip frp.zip
 cd frp
 # 写入配置文件
 echo '正在写入配置...'
