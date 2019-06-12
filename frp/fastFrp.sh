@@ -3,12 +3,14 @@ vport=$1
 domain=$2
 
 cd /root
-rm -rf /root/frp
+rm -rf /root/*frp*
 #下载文件到本地
 wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip
 unzip frp.zip
 cd frp
 
+# 写入配置文件
+echo '正在写入配置...'
 cat>frps.ini<<EOF
 [common]
 bind_port = 7000
@@ -29,5 +31,8 @@ auth_token = token
 EOF
 
 chmod -R 777 ./*
-
+# 停止已运行的frp
+echo '停止已运行的frp...'
+ps -ef|grep frp|grep -v grep|awk '{print $2}'|xargs kill -9
 nohup ./frps -c ./frps.ini >/dev/null 2>/dev/null &
+echo 'frp已在后台运行！'
