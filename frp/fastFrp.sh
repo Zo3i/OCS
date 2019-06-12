@@ -3,12 +3,10 @@ vport=$1
 domain=$2
 
 cd /root
-rm -rf /root/*frp*
+rm -rf /root/frp
 #下载文件到本地
-wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip
-unzip frp.zip
+if [ ! -f "frp.zip" ];then wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip;unzip frp.zip; fi
 cd frp
-
 # 写入配置文件
 echo '正在写入配置...'
 cat>frps.ini<<EOF
