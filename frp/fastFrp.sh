@@ -3,9 +3,9 @@ vport=$1
 domain=$2
 
 cd /root
-rm -rf /root/frp.*
+rm -rf /root/frp
 #下载文件到本地
-wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/frp.zip
+wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip
 unzip frp.zip
 cd frp
 
@@ -27,5 +27,7 @@ type = http
 subdomain_host = $domain
 auth_token = token
 EOF
+
+chmod -R 777 ./*
 
 nohup ./frps -c ./frps.ini >/dev/null 2>/dev/null &
