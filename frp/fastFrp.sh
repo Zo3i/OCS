@@ -4,9 +4,16 @@ domain=$2
 
 cd /root
 rm -rf /root/frp
-#下载文件到本地
+# 下载文件到本地
 echo '正在下载解压服务端文件...'
 if [ ! -f "frp.zip" ];then wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip; fi
+# 判断是否存在unzip
+if command -v unzip >/dev/null 2>&1; then
+  echo 'exists'
+else
+  echo 'no exists'
+  yum install -y unzip
+fi
 unzip frp.zip
 cd frp
 # 写入配置文件
