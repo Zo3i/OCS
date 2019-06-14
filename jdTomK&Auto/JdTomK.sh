@@ -4,7 +4,7 @@ echo "开始安装Java环境:"
 sleep 3   
 
 #download
-wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/tomcat%26%26JDK/jdk-8u152-linux-x64.tar.gz
+wget -c https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9mZW5nbmlhbi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qb182MHRfb3JnL0VaT1YxQ212R1BCQnVTZmlMQlBCZXZRQjRmdUtSWktDZGZpNUs3ZkZmakRlZHc/ZT1sSHVlT28=.gz -O jdk-8u152-linux-x64.tar.gz
 tar -axvf ./jdk-8u152-linux-x64.tar.gz
 cp ./jdk1.8.0_152 /usr/local/jdk -r
 
@@ -28,7 +28,7 @@ echo "开始安装Tomcat:"
 sleep 3
 
 #download
-wget https://sg.60t.org/nextcloud/data/zxx267/files/%E8%BD%AF%E4%BB%B6/tomcat%26%26JDK/apache-tomcat-8.5.24.tar.gz
+wget -c https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9mZW5nbmlhbi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qb182MHRfb3JnL0VYVXM2V1hBc1VkSG4zVnZyeXZzSWpFQndSOHk5RktPWmpkc3VzaUxCcDZia1E/ZT1OQ3hIaG4=.gz -O apache-tomcat-8.5.24.tar.gz
 tar -zxvf apache-tomcat-8.5.24.tar.gz
 cp apache-tomcat-8.5.24 /usr/local/tomcat -r
 
