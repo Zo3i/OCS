@@ -7,13 +7,13 @@ JDK版本为8,Tomcat为8.5,mysql为5.7;
 - **linux下载一键脚本:**
 
   ```shell
-  wget https://raw.githubusercontent.com/Zo3i/OCS/master/JdToM.sh
+  wget https://raw.githubusercontent.com/Zo3i/OCS/master/jdTomK%26Auto/JdTomK-Auto.sh
   ```
 
 - **执行脚本:**
 
   ```shell
-  source JdToM.sh
+  source JdTomK-Auto.sh
   ```
 
 - **进入数据库:**
