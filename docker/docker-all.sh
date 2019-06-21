@@ -383,7 +383,7 @@ do_install() {
 				$sh_c "apt-get install -y -qq --no-install-recommends docker-ce$pkg_version >/dev/null"
 			)
 			echo_docker_as_nonroot
-			exit 0
+
 			;;
 		centos|fedora)
 			yum_repo="$DOWNLOAD_URL/linux/$lsb_dist/$REPO_FILE"
@@ -453,7 +453,7 @@ do_install() {
 				$sh_c "$pkg_manager install -y -q docker-ce$pkg_version"
 			)
 			echo_docker_as_nonroot
-			exit 0
+
 			;;
 		*)
 			echo
@@ -462,6 +462,10 @@ do_install() {
 
 			;;
 	esac
+
+	###给当前用户授权
+	echo "启动"
+	sudo service docker restart
 }
 
 # wrapped up in a function so that we have some protection against only getting
@@ -472,7 +476,3 @@ chmod +x ~/docker-compose
 sudo mv ~/docker-compose /usr/local/bin/docker-compose
 ###安装docker
 do_install
-###给当前用户授权
-sudo groupadd docker
-sudo gpasswd -a ${USER} docker
-sudo service docker restart
