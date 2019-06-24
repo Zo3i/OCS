@@ -12,11 +12,11 @@ if [ ! -f "frp.zip" ];then wget https://github.com/Zo3i/OCS/raw/master/frp/frp.z
 install_zip()
 {
     if grep -Eqii "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
-        yum install -y zip
+        yum install -y unzip
     elif grep -Eqi "Debian" /etc/issue || grep -Eq "Debian" /etc/*-release; then
-        apt-get install -y zip
+        apt-get install -y unzip
     elif grep -Eqi "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
-        apt-get install -y zip
+        apt-get install -y unzip
     else
         DISTRO='unknow'
     fi
