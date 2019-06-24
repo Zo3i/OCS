@@ -8,12 +8,28 @@ rm -rf /root/frp
 echo '正在下载解压服务端文件...'
 if [ ! -f "frp.zip" ];then wget https://github.com/Zo3i/OCS/raw/master/frp/frp.zip; fi
 # 判断是否存在unzip
+
+install_zip()
+{
+    if grep -Eqii "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
+        yum install -y zip
+    elif grep -Eqi "Debian" /etc/issue || grep -Eq "Debian" /etc/*-release; then
+        apt-get install -y zip
+    elif grep -Eqi "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
+        apt-get install -y zip
+    else
+        DISTRO='unknow'
+    fi
+    echo $DISTRO;
+}
+
 if command -v unzip >/dev/null 2>&1; then
   echo 'exists'
 else
   echo 'no exists'
-  yum install -y unzip
+  install_zip
 fi
+
 unzip frp.zip
 cd frp
 # 写入配置文件
@@ -37,9 +53,23 @@ subdomain_host = $domain
 auth_token = token
 EOF
 
-chmod -R 777 ./*
-# 停止已运行的frp
-echo '停止已运行的frp...'
-ps -ef|grep frp|grep -v grep|awk '{print $2}'|xargs kill -9
-nohup ./frps -c ./frps.ini >/dev/null 2>/dev/null &
+chmod +x frps
+#添加自启动 加载配置文件
+cat > /etc/systemd/system/frps.service <<EOF
+[Unit]
+Description=frps
+After=network.target
+Wants=network.target
+[Service]
+Type=simple
+PIDFile=/var/run/frps.pid
+ExecStart=/root/frp/frps -c /root/frp/frps.ini
+RestartPreventExitStatus=23
+Restart=always
+User=root
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl restart frps
+systemctl enable frps
 echo 'frp已在后台运行！'
