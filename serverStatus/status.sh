@@ -65,7 +65,7 @@ check_pid_client(){
 }
 Download_Server_Status_server(){
 	cd "/tmp"
-	wget -N --no-check-certificate "https://github.com/Zo3i/OCS/blob/master/serverStatus/master.zip"
+	wget -N --no-check-certificate "https://github.com/Zo3i/OCS/raw/master/serverStatus/master.zip"
 	[[ ! -e "master.zip" ]] && echo -e "${Error} ServerStatus 服务端下载失败 !" && exit 1
 	unzip master.zip
 	rm -rf master.zip
