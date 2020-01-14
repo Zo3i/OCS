@@ -57,74 +57,71 @@ DD_GD(){
 }
 
 
-init() {
-  echo && echo -e "
-  +-------------------------------------------------------------+
-  |                          懒人专用                            |
-  |                        Auth: 张琪灵                          |
-  |                      欢迎提交一键脚本                        |
-  +-------------------------------------------------------------+
+echo && echo -e "
++-------------------------------------------------------------+
+|                          懒人专用                            |
+|                        Auth: 张琪灵                          |
+|                      欢迎提交一键脚本                        |
++-------------------------------------------------------------+
 
-  ————————————
-  ${Green_font_prefix} 1.${Font_color_suffix} 加速系列：Bbr系列、锐速
-  ${Green_font_prefix} 2.${Font_color_suffix} 安装谷歌 BBR2 BBRV2
-  ${Green_font_prefix} 3.${Font_color_suffix} 安装KCPtun
-  ${Green_font_prefix} 4.${Font_color_suffix} 安装SSR多用户版
-  ————————————
-  ${Green_font_prefix} 5.${Font_color_suffix} 安装V2ary_233一键
-  ${Green_font_prefix} 6.${Font_color_suffix} Tg专用代理（Go版）
-  ${Green_font_prefix} 7.${Font_color_suffix} 安装Goflyway
-  ${Green_font_prefix} 8.${Font_color_suffix} 小鸡性能测试
-  ————————————
-  ${Green_font_prefix} 9.${Font_color_suffix} 回程线路测试:命令:./huicheng 您的IP
-  ${Green_font_prefix}10.${Font_color_suffix} 云监控
-  ${Green_font_prefix}11.${Font_color_suffix} 傻瓜式一键DD包（OD源）
-  ${Green_font_prefix}12.${Font_color_suffix} 傻瓜式一键DD包（GD源）
-  ————————————" && echo
-  echo
-  read -e -p " 请输入数字 [0-12]:" num
-  case "$num" in
-  	0)
-    esho "hello world"
-    ;;
-    1)
-    bbr_ruisu
-    ;;
-  	2)
-    Google_bbr2
-    ;;
-  	3)
-    Kcptun
-    ;;
-  	4)
-    Install_ssr
-    ;;
-  	5)
-    Install_V2ray
-    ;;
-  	6)
-    Tg_socks
-    ;;
-  	7)
-    Install_goflyway
-    ;;
-  	8)
-    View_superbench
-    ;;
-  	9)
-    View_huicheng
-    ;;
-  	10)
-    Install_status
-    ;;
-  	11)
-    DD_OD
-    ;;
-  	12)
-    DD_GD
-    ;;
-  	*)
-    echo "请输入正确数字 [1-12]"
-esac
-}
-init
+————————————
+${Green_font_prefix} 1.${Font_color_suffix} 加速系列：Bbr系列、锐速
+${Green_font_prefix} 2.${Font_color_suffix} 安装谷歌 BBR2 BBRV2
+${Green_font_prefix} 3.${Font_color_suffix} 安装KCPtun
+${Green_font_prefix} 4.${Font_color_suffix} 安装SSR多用户版
+————————————
+${Green_font_prefix} 5.${Font_color_suffix} 安装V2ary_233一键
+${Green_font_prefix} 6.${Font_color_suffix} Tg专用代理（Go版）
+${Green_font_prefix} 7.${Font_color_suffix} 安装Goflyway
+${Green_font_prefix} 8.${Font_color_suffix} 小鸡性能测试
+————————————
+${Green_font_prefix} 9.${Font_color_suffix} 回程线路测试:命令:./huicheng 您的IP
+${Green_font_prefix}10.${Font_color_suffix} 云监控
+${Green_font_prefix}11.${Font_color_suffix} 傻瓜式一键DD包（OD源）
+${Green_font_prefix}12.${Font_color_suffix} 傻瓜式一键DD包（GD源）
+————————————" && echo
+echo
+read -e -p " 请输入数字 [0-12]:" num
+case "$num" in
+	0)
+  esho "hello world"
+  ;;
+  1)
+  bbr_ruisu
+  ;;
+	2)
+  Google_bbr2
+  ;;
+	3)
+  Kcptun
+  ;;
+	4)
+  Install_ssr
+  ;;
+	5)
+  Install_V2ray
+  ;;
+	6)
+  Tg_socks
+  ;;
+	7)
+  Install_goflyway
+  ;;
+	8)
+  View_superbench
+  ;;
+	9)
+  View_huicheng
+  ;;
+	10)
+  Install_status
+  ;;
+	11)
+  DD_OD
+  ;;
+	12)
+  DD_GD
+  ;;
+	*)
+  echo "请输入正确数字 [1-12]"
+  esac
