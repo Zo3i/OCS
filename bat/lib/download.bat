@@ -6,7 +6,6 @@ chcp 65001
 
 ::删除文件
 if exist .\client\frpc.ini del .\client\frpc.ini
-if exist .\client\frpc.exe del .\client\frpc.exe
 if exist .\client\frpc_full.ini del .\client\frpc_full.ini
 if exist .\client\frpc.log del .\client\frpc.log
 
@@ -20,9 +19,16 @@ set downloadFrpConfigUrl=http://34.80.211.24/frpc_full.ini
 call :downloadFunc %downloadFrpConfigUrl%
 echo success
 
-set downloadExeUrl=http://34.80.211.24/frpc.exe
-call :downloadFunc %downloadExeUrl%
-echo success
+
+set location=.\client\frpc.exe
+if exist  %location% (
+  echo "存在frpc.exe"
+) else (
+  set downloadExeUrl=http://34.80.211.24/frpc.exe
+  call :downloadFunc %downloadExeUrl%
+  echo success
+)
+
 goto:EXIT
 
 
