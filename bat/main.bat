@@ -3,33 +3,60 @@ REM 声明采用UTF-8编码
 chcp 65001
 setlocal enabledelayedexpansion
 
-if exist client (
-   echo "已经存在文件夹"
-) else (
-md client
-)
+
+echo.
+echo #########################
+echo #   author: 张琪灵      #
+echo #   email: bash@zxx.sh  #
+echo #########################
+echo.
+echo.
+
+set useFor=
+set /p useFor=  用途(1、WEB穿透2、文件目录3、远程桌面)：
 
 ::下载
-call .\lib\download.bat
+call .\lib\download.bat 34.80.211.24 %useFor%
 
-::修改
+echo.
+echo =====配置文件=====
+echo.
 
-set replaced=FIX_NAME
-set all=
-set /p all=  请输入项目名：
-call :modifyFuc %replaced% %all%
+if %useFor%==1 (
+  :: WEB内网穿透
+  set FIX_WEB_NAME=FIX_NAME
+  set FIX_WEB_NAME_REPLACE=
+  set /p FIX_WEB_NAME_REPLACE=  "请输入项目名(随意)："
+  call :modifyFuc !FIX_WEB_NAME! !FIX_WEB_NAME_REPLACE!
 
-set replaced=FIX_PORT
-set all=
-set /p all=  请输入项目端口：
-call :modifyFuc %replaced% %all%
+  set FIX_WEB_PORT=FIX_PORT
+  set FIX_WEB_PORT_REPLACE=
+  set /p FIX_WEB_PORT_REPLACE=  "请输入项目端口(100~60000)："
+  call :modifyFuc !FIX_WEB_PORT! !FIX_WEB_PORT_REPLACE!
 
-set replaced=FIX_DOMAIN
-set all=
-set /p all=  请输入二级域名(英文)：
-call :modifyFuc %replaced% %all%
+  set FIX_WEB_DOMAIN=FIX_DOMAIN
+  set FIX_WEB_DOMAIN_REPLACE=
+  set /p FIX_WEB_DOMAIN_REPLACE=  "请输入项目二级域名(英文)："
+  call :modifyFuc !FIX_WEB_DOMAIN! !FIX_WEB_DOMAIN_REPLACE!
 
-echo 公网访问: %all%.vae.one:99
+  echo 公网访问: !FIX_WEB_DOMAIN_REPLACE!.vae.one:99
+) ^
+else if %useFor%==2 (
+
+  set FIX_FILE_NAME=FIX_NAME
+  set FIX_FILE_NAME_REPLACE=
+  set /p FIX_FILE_NAME_REPLACE=  "请输入项目名(随意)："
+  call :modifyFuc !FIX_FILE_NAME! !FIX_FILE_NAME_REPLACE!
+
+  set FIX_FILE_PORT=FIX_PORT
+  set FIX_FILE_PORT_REPLACE=
+  set /p FIX_FILE_PORT_REPLACE=  "请输入远程端口(100~60000)："
+  call :modifyFuc !FIX_FILE_PORT! !FIX_FILE_PORT_REPLACE!
+
+  echo "把文件放入file文件夹即可分享文件"
+  echo "公网访问: vae.one:!FIX_FILE_PORT_REPLACE!/file/"
+)
+
 
 :: 运行frp客户端
 .\client\frpc.exe -c .\client\frpc.ini
@@ -44,9 +71,10 @@ pause
   echo.
   for /f "delims=" %%i in ('type "%file%"') do (
      set str=%%i
-     set "str=!str:%replaced%=%all%!"
+     set "str=!str:%~1=%~2!"
      echo !str!>>"%file%"_tmp.txt
   )
+
   copy "%file%" "%file%"_bak.txt >nul 2>nul
   move "%file%"_tmp.txt "%file%" >nul 2>nul
   del "%file%"_bak.txt

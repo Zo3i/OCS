@@ -3,34 +3,58 @@ color 0b
 REM 声明采用UTF-8编码
 chcp 65001
 
+if exist client (
+   echo "已经存在文件夹client"
+   echo.
+) else (
+  md client
+)
 
 ::删除文件
 if exist .\client\frpc.ini del .\client\frpc.ini
+::if exist .\client\frpc.exe del .\client\frpc.exe
 if exist .\client\frpc_full.ini del .\client\frpc_full.ini
 if exist .\client\frpc.log del .\client\frpc.log
 
+::echo 下载Host: %1
+set host=%1
+set useFor=%2
+set downloadWEBUrl=http://%host%/frpc.ini
+set downloadFILEUrl=http://%host%/frpc1.ini
+set downloadRDPUrl=http://%host%/frpc2.ini
+set fileName=frpc.ini
 
-:: 下载
-set downloadFrpUrl=http://34.80.211.24/frpc.ini
-call :downloadFunc %downloadFrpUrl%
-echo success
+if %useFor%==1 (
+  echo 下载WEB穿透配置文件...
+  call :downloadFunc %downloadWEBUrl% %fileName%
+  echo.
+) else if %useFor%==2 (
+  echo 下载文件目录配置文件...
 
-set downloadFrpConfigUrl=http://34.80.211.24/frpc_full.ini
-call :downloadFunc %downloadFrpConfigUrl%
-echo success
+  if exist file (
+     echo "已经存在文件夹file"
+     echo.
+  ) else (
+    md file
+  )
 
-
-set location=.\client\frpc.exe
-if exist  %location% (
-  echo "存在frpc.exe"
+  call :downloadFunc %downloadFILEUrl% %fileName%
+  echo.
 ) else (
-  set downloadExeUrl=http://34.80.211.24/frpc.exe
-  call :downloadFunc %downloadExeUrl%
-  echo success
+  echo 下载远程桌面配置文件...
+  call :downloadFunc %downloadRDPUrl% %fileName%
+  echo.
 )
 
-goto:EXIT
+:: 下载
+set downloadFrpConfigUrl=http://%host%/frpc_full.ini
+set frpFullName=frpc_full.ini
+call :downloadFunc %downloadFrpConfigUrl% %frpFullName%
 
+set downloadExeUrl=http://%host%/frpc.exe
+set frpExeName=frpc.exe
+::call :downloadFunc %downloadExeUrl% %frpExeName%
+goto:EXIT
 
 
 ::::::::::::::::::::函数::::::::::::::::::::
@@ -39,6 +63,7 @@ goto:EXIT
   set Save=.\client
   if exist %Save% (echo 位置：%Save%) else (mkdir %Save% & echo 已创建：%Save%)
   set Url=%1
+  set SaveName=%2
   for %%a in ("%Url%") do set "FileName=%%~nxa"
     echo 正在下载%FileName%，请勿关闭窗口...
     if not defined Save set "Save=%cd%"
@@ -57,7 +82,7 @@ goto:EXIT
     echo   ado.SaveToFile target
     echo   ado.Close
     echo End Sub)>DownloadFile.vbs
-    DownloadFile.vbs "%Url%" "%Save%\%FileName%"
+    DownloadFile.vbs "%Url%" "%Save%\%SaveName%"
     ::下载完删除生成的vbs文件
     del DownloadFile.vbs
 :EXIT
