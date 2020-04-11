@@ -42,7 +42,7 @@ if %useFor%==1 (
   echo 公网访问: !FIX_WEB_DOMAIN_REPLACE!.vae.one:99
 ) ^
 else if %useFor%==2 (
-
+  :: 目录文件
   set FIX_FILE_NAME=FIX_NAME
   set FIX_FILE_NAME_REPLACE=
   set /p FIX_FILE_NAME_REPLACE=  "请输入项目名(随意)："
@@ -55,6 +55,20 @@ else if %useFor%==2 (
 
   echo "把文件放入file文件夹即可分享文件"
   echo "公网访问: vae.one:!FIX_FILE_PORT_REPLACE!/file/"
+) ^
+else (
+  ::远程桌面
+  set FIX_RDP_NAME=FIX_NAME
+  set FIX_RDP_NAME_REPLACE=
+  set /p FIX_RDP_NAME_REPLACE=  "请输入项目名(随意)："
+  call :modifyFuc !FIX_RDP_NAME! !FIX_RDP_NAME_REPLACE!
+
+  set FIX_RDP_PORT=FIX_PORT
+  set FIX_RDP_PORT_REPLACE=
+  set /p FIX_RDP_PORT_REPLACE=  "请输入远程端口(100~60000)："
+  call :modifyFuc !FIX_RDP_PORT! !FIX_RDP_PORT_REPLACE!
+
+  echo "访问：150.109.65.145:!FIX_RDP_PORT_REPLACE!"
 )
 
 
