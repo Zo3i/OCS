@@ -39,7 +39,7 @@ if %useFor%==1 (
   set /p FIX_WEB_DOMAIN_REPLACE=  "请输入项目二级域名(英文)："
   call :modifyFuc !FIX_WEB_DOMAIN! !FIX_WEB_DOMAIN_REPLACE!
 
-  echo 公网访问: !FIX_WEB_DOMAIN_REPLACE!.vae.one:99
+  echo 公网访问: !FIX_WEB_DOMAIN_REPLACE!.vae.one
 ) ^
 else if %useFor%==2 (
   :: 目录文件

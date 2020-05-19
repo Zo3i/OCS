@@ -53,7 +53,7 @@ call :downloadFunc %downloadFrpConfigUrl% %frpFullName%
 
 set downloadExeUrl=http://%host%/frpc.exe
 set frpExeName=frpc.exe
-::call :downloadFunc %downloadExeUrl% %frpExeName%
+call :downloadFunc %downloadExeUrl% %frpExeName%
 goto:EXIT
 
 
