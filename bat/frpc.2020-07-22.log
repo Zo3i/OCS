@@ -1,0 +1,200 @@
+2020/07/22 10:57:30 [I] [service.go:214] login to server success, get run id [92792f8b7729f8f6], server udp port [0]
+2020/07/22 10:57:30 [I] [proxy_manager.go:137] [92792f8b7729f8f6] proxy added: [111]
+2020/07/22 10:57:30 [I] [control.go:143] [111] start proxy success
+2020/07/22 11:31:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:13 [I] [control.go:217] control writer is closing
+2020/07/22 11:31:13 [I] [service.go:126] try to reconnect to server...
+2020/07/22 11:31:13 [W] [control.go:164] start new connection to server error: session shutdown
+2020/07/22 11:31:14 [I] [service.go:214] login to server success, get run id [92792f8b7729f8f6], server udp port [0]
+2020/07/22 11:31:14 [I] [proxy_manager.go:137] [92792f8b7729f8f6] proxy added: [111]
+2020/07/22 11:31:33 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:33 [I] [control.go:217] control writer is closing
+2020/07/22 11:31:33 [I] [service.go:126] try to reconnect to server...
+2020/07/22 11:31:33 [I] [service.go:214] login to server success, get run id [92792f8b7729f8f6], server udp port [0]
+2020/07/22 11:31:33 [I] [proxy_manager.go:137] [92792f8b7729f8f6] proxy added: [111]
+2020/07/22 11:31:52 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:31:52 [I] [control.go:217] control writer is closing
+2020/07/22 11:31:52 [I] [service.go:126] try to reconnect to server...
+2020/07/22 11:31:53 [I] [service.go:214] login to server success, get run id [92792f8b7729f8f6], server udp port [0]
+2020/07/22 11:31:53 [I] [proxy_manager.go:137] [92792f8b7729f8f6] proxy added: [111]
+2020/07/22 11:32:12 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:32:12 [I] [control.go:217] control writer is closing
+2020/07/22 11:32:12 [I] [service.go:126] try to reconnect to server...
+2020/07/22 11:32:12 [I] [service.go:214] login to server success, get run id [92792f8b7729f8f6], server udp port [0]
+2020/07/22 11:32:12 [I] [proxy_manager.go:137] [92792f8b7729f8f6] proxy added: [111]
+2020/07/22 11:32:31 [I] [control.go:217] control writer is closing
+2020/07/22 11:32:31 [E] [control.go:126] work connection closed, EOF
+2020/07/22 11:32:31 [I] [service.go:126] try to reconnect to server...
+2020/07/22 11:32:31 [I] [service.go:214] login to server success, get run id [92792f8b7729f8f6], server udp port [0]
+2020/07/22 11:32:31 [I] [proxy_manager.go:137] [92792f8b7729f8f6] proxy added: [111]
+2020/07/22 15:32:06 [I] [service.go:214] login to server success, get run id [f87c666c44caf116], server udp port [0]
+2020/07/22 15:32:06 [I] [proxy_manager.go:137] [f87c666c44caf116] proxy added: [2]
+2020/07/22 15:32:06 [I] [control.go:143] [2] start proxy success
+2020/07/22 16:27:09 [I] [service.go:214] login to server success, get run id [bef20530d71fe56d], server udp port [0]
+2020/07/22 16:27:09 [I] [proxy_manager.go:137] [bef20530d71fe56d] proxy added: [sss]
+2020/07/22 16:27:09 [I] [control.go:143] [sss] start proxy success
+2020/07/22 16:34:42 [E] [proxy.go:446] [sss] connect to local service [localhost:8999] error: dial tcp 127.0.0.1:8999: connectex: No connection could be made because the target machine actively refused it.
+2020/07/22 17:28:24 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 17:28:24 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 17:28:25 [I] [control.go:143] [xxx] start proxy success
+2020/07/22 17:29:24 [E] [proxy.go:446] [xxx] connect to local service [localhost:8999] error: dial tcp 127.0.0.1:8999: connectex: No connection could be made because the target machine actively refused it.
+2020/07/22 17:29:58 [E] [proxy.go:446] [xxx] connect to local service [localhost:8999] error: dial tcp 127.0.0.1:8999: connectex: No connection could be made because the target machine actively refused it.
+2020/07/22 18:59:01 [W] [control.go:253] heartbeat timeout
+2020/07/22 18:59:02 [E] [control.go:126] work connection closed, EOF
+2020/07/22 18:59:02 [E] [control.go:126] work connection closed, EOF
+2020/07/22 18:59:02 [E] [control.go:126] work connection closed, EOF
+2020/07/22 18:59:02 [E] [control.go:126] work connection closed, EOF
+2020/07/22 18:59:02 [I] [control.go:217] control writer is closing
+2020/07/22 18:59:02 [E] [control.go:126] work connection closed, EOF
+2020/07/22 18:59:02 [E] [control.go:126] work connection closed, EOF
+2020/07/22 18:59:02 [I] [service.go:126] try to reconnect to server...
+2020/07/22 18:59:02 [W] [service.go:129] reconnect to server error: dial tcp 150.109.65.145:7000: connectex: A socket operation was attempted to an unreachable host.
+2020/07/22 18:59:03 [I] [service.go:126] try to reconnect to server...
+2020/07/22 18:59:03 [W] [service.go:129] reconnect to server error: dial tcp 150.109.65.145:7000: connectex: A socket operation was attempted to an unreachable host.
+2020/07/22 18:59:05 [I] [service.go:126] try to reconnect to server...
+2020/07/22 18:59:05 [W] [service.go:129] reconnect to server error: dial tcp 150.109.65.145:7000: connectex: A socket operation was attempted to an unreachable host.
+2020/07/22 18:59:09 [I] [service.go:126] try to reconnect to server...
+2020/07/22 18:59:09 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 18:59:09 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 18:59:09 [I] [control.go:143] [xxx] start proxy success
+2020/07/22 19:28:03 [I] [control.go:217] control writer is closing
+2020/07/22 19:28:03 [I] [service.go:126] try to reconnect to server...
+2020/07/22 19:28:03 [E] [control.go:126] work connection closed, EOF
+2020/07/22 19:28:18 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 19:28:18 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 19:28:18 [I] [control.go:143] [xxx] start proxy success
+2020/07/22 20:23:16 [I] [control.go:217] control writer is closing
+2020/07/22 20:23:16 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:23:16 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:23:16 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:23:16 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:23:35 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:23:35 [I] [control.go:217] control writer is closing
+2020/07/22 20:23:35 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:23:35 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:23:35 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:23:54 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:23:54 [I] [control.go:217] control writer is closing
+2020/07/22 20:23:54 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:23:54 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:23:54 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:24:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:24:13 [I] [control.go:217] control writer is closing
+2020/07/22 20:24:13 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:24:13 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:24:13 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:24:33 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:24:33 [I] [control.go:217] control writer is closing
+2020/07/22 20:24:33 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:24:33 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:24:33 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:24:52 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:24:52 [I] [control.go:217] control writer is closing
+2020/07/22 20:24:52 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:24:52 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:24:52 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:25:11 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:25:11 [I] [control.go:217] control writer is closing
+2020/07/22 20:25:11 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:25:22 [W] [service.go:129] reconnect to server error: i/o deadline reached
+2020/07/22 20:25:23 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:25:23 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:25:23 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:25:42 [I] [control.go:217] control writer is closing
+2020/07/22 20:25:42 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:25:42 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:25:42 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:25:42 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:25:43 [I] [control.go:143] [xxx] start proxy success
+2020/07/22 20:27:32 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:27:32 [I] [control.go:217] control writer is closing
+2020/07/22 20:27:32 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:27:32 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:27:32 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:27:51 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:27:51 [I] [control.go:217] control writer is closing
+2020/07/22 20:27:51 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:27:51 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:27:51 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:28:10 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:28:10 [I] [control.go:217] control writer is closing
+2020/07/22 20:28:10 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:28:10 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:28:10 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:28:29 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:28:29 [I] [control.go:217] control writer is closing
+2020/07/22 20:28:29 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:28:29 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:28:29 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:28:48 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:28:48 [I] [control.go:217] control writer is closing
+2020/07/22 20:28:48 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:28:49 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:28:49 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:29:08 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:29:08 [I] [control.go:217] control writer is closing
+2020/07/22 20:29:08 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:29:08 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:29:08 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:29:27 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:29:27 [I] [control.go:217] control writer is closing
+2020/07/22 20:29:27 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:29:38 [W] [service.go:129] reconnect to server error: i/o deadline reached
+2020/07/22 20:29:39 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:29:39 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:29:39 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:29:58 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:29:58 [I] [control.go:217] control writer is closing
+2020/07/22 20:29:58 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:29:58 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:29:58 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:30:17 [I] [control.go:217] control writer is closing
+2020/07/22 20:30:17 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:30:17 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:30:17 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:30:17 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:30:37 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:30:37 [I] [control.go:217] control writer is closing
+2020/07/22 20:30:37 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:30:37 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:30:37 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:30:56 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:30:56 [I] [control.go:217] control writer is closing
+2020/07/22 20:30:56 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:30:56 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:30:56 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:31:15 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:31:15 [I] [control.go:217] control writer is closing
+2020/07/22 20:31:15 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:31:15 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:31:15 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:31:34 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:31:34 [I] [control.go:217] control writer is closing
+2020/07/22 20:31:34 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:31:34 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:31:34 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:31:54 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:31:54 [I] [control.go:217] control writer is closing
+2020/07/22 20:31:54 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:31:54 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:31:54 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:32:13 [I] [control.go:217] control writer is closing
+2020/07/22 20:32:13 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:32:13 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:32:13 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:32:13 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:32:32 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:32:32 [I] [control.go:217] control writer is closing
+2020/07/22 20:32:32 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:32:32 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:32:32 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:32:51 [E] [control.go:126] work connection closed, EOF
+2020/07/22 20:32:51 [I] [control.go:217] control writer is closing
+2020/07/22 20:32:51 [I] [service.go:126] try to reconnect to server...
+2020/07/22 20:32:51 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/22 20:32:51 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/22 20:33:01 [I] [control.go:143] [xxx] start proxy success

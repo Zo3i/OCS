@@ -1,0 +1,21 @@
+2020/07/23 07:39:27 [E] [control.go:126] work connection closed, EOF
+2020/07/23 07:39:27 [E] [control.go:126] work connection closed, EOF
+2020/07/23 07:39:27 [W] [control.go:253] heartbeat timeout
+2020/07/23 07:39:27 [E] [control.go:126] work connection closed, EOF
+2020/07/23 07:39:27 [E] [control.go:126] work connection closed, EOF
+2020/07/23 07:39:27 [E] [control.go:126] work connection closed, EOF
+2020/07/23 07:39:27 [E] [control.go:126] work connection closed, EOF
+2020/07/23 07:39:28 [I] [control.go:217] control writer is closing
+2020/07/23 07:39:28 [I] [service.go:126] try to reconnect to server...
+2020/07/23 07:39:29 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/23 07:39:29 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/23 07:39:30 [I] [control.go:143] [xxx] start proxy success
+2020/07/23 08:34:07 [E] [control.go:126] work connection closed, EOF
+2020/07/23 08:34:07 [W] [control.go:253] heartbeat timeout
+2020/07/23 08:34:07 [I] [control.go:217] control writer is closing
+2020/07/23 08:34:07 [I] [service.go:126] try to reconnect to server...
+2020/07/23 08:34:07 [W] [service.go:129] reconnect to server error: dial tcp 150.109.65.145:7000: connectex: A socket operation was attempted to an unreachable host.
+2020/07/23 08:34:11 [I] [service.go:126] try to reconnect to server...
+2020/07/23 08:34:11 [I] [service.go:214] login to server success, get run id [60a16287d2a1be24], server udp port [0]
+2020/07/23 08:34:11 [I] [proxy_manager.go:137] [60a16287d2a1be24] proxy added: [xxx]
+2020/07/23 08:34:11 [I] [control.go:143] [xxx] start proxy success

@@ -51,11 +51,12 @@ set downloadFrpConfigUrl=http://%host%/frpc_full.ini
 set frpFullName=frpc_full.ini
 call :downloadFunc %downloadFrpConfigUrl% %frpFullName%
 
-set downloadExeUrl=http://%host%/frpc.exe
-set frpExeName=frpc.exe
-call :downloadFunc %downloadExeUrl% %frpExeName%
+if not exist .\client\frpc.exe (
+	set downloadExeUrl=http://%host%/frpc.exe
+	set frpExeName=frpc.exe
+	call :downloadFunc %downloadExeUrl% %frpExeName%
+)
 goto:EXIT
-
 
 ::::::::::::::::::::函数::::::::::::::::::::
 :: 下载函数
