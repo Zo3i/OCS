@@ -1,6 +1,7 @@
 #!/bin/sh
 vport=$1
 domain=$2
+authToken=$3
 
 cd /root
 rm -rf /root/frp
@@ -50,7 +51,7 @@ privilege_token = QeWer
 max_pool_count = 50
 type = http
 subdomain_host = $domain
-auth_token = token
+auth_token = $authToken
 EOF
 
 chmod +x frps
