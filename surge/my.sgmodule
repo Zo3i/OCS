@@ -1,5 +1,6 @@
 #!name=Myself
 #!desc=def some url proxy
 
+[Section]
 DOMAIN-SUFFIX,openai.com,🇯🇵 Japan 01
 DOMAIN-SUFFIX,librespeed.cn,🇯🇵 Japan 01
