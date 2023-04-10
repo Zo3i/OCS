@@ -2,5 +2,5 @@
 #!desc=def some url proxy
 
 [Rule]
-DOMAIN-SUFFIX,openai.com,🇯🇵 Japan 01     s
-DOMAIN-SUFFIX,librespeed.cn,Nexitally
+DOMAIN-SUFFIX,openai.com,🇯🇵 Japan 01
+DOMAIN-SUFFIX,librespeed.cn,🇯🇵 Japan 01
