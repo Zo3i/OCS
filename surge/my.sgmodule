@@ -4,5 +4,4 @@
 [Rule]
 # > OPEN AI
 DOMAIN-SUFFIX,openai.com,📟 Twitter
-DOMAIN-SUFFIX,wechat.com,Domestic
-DOMAIN-SUFFIX,qq.com,Domestic
+PROCESS-NAME,WeChat,Domestic
