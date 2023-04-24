@@ -3,7 +3,7 @@
 
 [Rule]
 # > OPEN AI
-DOMAIN-SUFFIX,openai.com,📟 Twitter
+# DOMAIN-SUFFIX,openai.com,📟 Twitter
 PROCESS-NAME,WeChat,Domestic
 PROCESS-NAME,Royal TSX,Domestic
 
