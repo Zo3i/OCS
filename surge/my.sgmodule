@@ -9,5 +9,7 @@ PROCESS-NAME,Royal TSX,Domestic
 PROCESS-NAME,/Applications/WeChat.app/Contents/MacOS/WeChat,Domestic
 DOMAIN-SUFFIX,w2solo.com,Nexitally
 DOMAIN-SUFFIX,*.okx.com,Nexitally
+DOMAIN-SUFFIX,static.okx.com,Nexitally
+
 
 
