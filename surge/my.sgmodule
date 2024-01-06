@@ -13,6 +13,8 @@ DOMAIN-SUFFIX,*.ierc20.com,Nexitally
 DOMAIN-SUFFIX,static.okx.com,Nexitally
 DOMAIN-SUFFIX,noscription.org,Nexitally
 DOMAIN-SUFFIX,zxx.im,Nexitally
+DOMAIN-SUFFIX,zxx.sh,Nexitally
+
 
 DOMAIN-SUFFIX,*.noscription.org,Nexitally
 DOMAIN-SUFFIX,47.117.160.69,Domestic
