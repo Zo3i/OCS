@@ -15,6 +15,9 @@ DOMAIN-SUFFIX,noscription.org,Nexitally
 DOMAIN-SUFFIX,satsx.io,Nexitally
 DOMAIN-SUFFIX,*.satsx.io,Nexitally
 
+DOMAIN-SUFFIX,www.hostloc.com,Nexitally
+
+
 
 DOMAIN-SUFFIX,*.noscription.org,Nexitally
 DOMAIN-SUFFIX,47.117.160.69,Domestic
