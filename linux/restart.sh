@@ -28,4 +28,4 @@ done
 echo "替换操作完成"
 
 
-pm2 restart all
+/root/.nvm/versions/node/v22.9.0/bin/pm2 restart all
