@@ -4,8 +4,8 @@
 files=(/root/fomoMiner*/swap.js /root/fomoMiner*/mine.js)
 
 # 定义要替换的旧URL和新URL
-old_url="https://sui-rpc.publicnode.com"
-new_url="https://rpc-mainnet.suiscan.xyz"
+new_url="https://sui-rpc.publicnode.com"
+old_url="https://rpc-mainnet.suiscan.xyz"
 
 # 遍历文件并进行替换
 for file in "${files[@]}"; do
